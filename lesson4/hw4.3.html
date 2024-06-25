@@ -5,12 +5,15 @@
     <title>Homework3</title>
 </head>
 <style>
+    *{
+        scroll-behavior: smooth;
+    }
     body{
         margin: 0;
     }
     span{
         font-size: 40px;
-        margin: 30px 0;
+        margin: 10px 0;
     }
     h3{
         font-size: 60px;
@@ -37,9 +40,17 @@
     .green{
         background-color: darkseagreen;
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .down{
+        margin-top: 50px;
+    }
+
 </style>
 <body>
-<div class="block blue">
+<div id="link-blue" class="block blue">
     <h3>Selection Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aspernatur atque aut consectetur
         corporis cupiditate debitis delectus dolore eos et ex exercitationem facilis in inventore iure laudantium libero
@@ -49,10 +60,10 @@
         corporis cupiditate debitis delectus dolore eos et ex exercitationem facilis in inventore iure laudantium libero
         modi odit officia optio perferendis porro, quaerat quas quidem quisquam ratione reiciendis, reprehenderit saepe
         sed tenetur ullam vel veritatis vitae, voluptate.</p>
-    <span class="down">&#9660;</span>
+    <span class="down"><a href="#link-orange">&#9660;</a></span>
 </div>
-<div class="block orange">
-    <span class="down">&#9650;</span>
+<div id="link-orange" class="block orange">
+    <span class="up"><a href="#link-blue">&#9650;</a></span>
     <h3>Selection Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aspernatur atque aut consectetur
         corporis cupiditate debitis delectus dolore eos et ex exercitationem facilis in inventore iure laudantium libero
@@ -62,10 +73,10 @@
         corporis cupiditate debitis delectus dolore eos et ex exercitationem facilis in inventore iure laudantium libero
         modi odit officia optio perferendis porro, quaerat quas quidem quisquam ratione reiciendis, reprehenderit saepe
         sed tenetur ullam vel veritatis vitae, voluptate.</p>
-    <span class="down">&#9660;</span>
+    <span class="down"><a href="#link-green">&#9660;</a></span>
 </div>
-<div class="block green">
-    <span class="down">&#9650;</span>
+<div id="link-green" class="block green">
+    <span class="up"><a href="#link-orange">&#9650;</a></span>
     <h3>Selection Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aspernatur atque aut consectetur
         corporis cupiditate debitis delectus dolore eos et ex exercitationem facilis in inventore iure laudantium libero
