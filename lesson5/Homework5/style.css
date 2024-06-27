@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.active{
+    color: #212721;
+}
+/*------------header--------------*/
+header{
+    font-family: "Orbitron", sans-serif;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header div{
+  text-align: center;
+
+}
+header nav{
+    width: 60%;
+
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+header nav ul a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+    font-size: 20px;
+}
+header nav ul a:hover {
+    color: #4a2f1d;
+    transition: 0.5s;
+}
+
+/*---------section-------------*/
+section{
+    font-family: "Orbitron", sans-serif;
+    height: 90vh;
+    background-image: url(images/image1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.first-text{
+    margin: 10vh;
+}
+section p {
+    font-size: 20px;
+}
+h1{
+    font-size: 120px;
+    letter-spacing: 30px;
+    margin-bottom: 20px;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: #ffffff;
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+address{
+    height: 90vh;
+    background-image: url("images/image2.jpg");
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+address div{
+    padding: 20vh;
+}
+address h2{
+    font-size: 50px;
+    margin-bottom: 3vh;
+}
+address p{
+    font-size: 20px;
+    margin-bottom: 3vh;
+}
+main{
+    height: 90vh;
+    background-image: url(images/image3.jpg);
+    background-size: cover;
+
+}
