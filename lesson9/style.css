@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    margin-top: 30px;
+    border:1px solid black;
+    width: 25vw;
+    height: 60vh;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    margin: 20px;
+}
+.enter{
+    width: 20vw;
+    padding: 5px;
+    height: 5vh;
+    margin: 8px;
+    font-size: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid #c1c1c1;
+    border-radius: 2px;
+}
+.button{
+    margin: 20px 0 30px 0;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: rgb(104, 180, 251);
+    border-style: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+.facebook a{
+    display: flex;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.facebook p{
+    font-size: 18px;
+    color: rgb(80,91,183);
+    margin-left: 5px;
+}
+.facebook p:hover{
+    color: rgb(12, 44, 76);
+}
+.password{
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.up{
+    margin-top: 15px;
+    border:1px solid black;
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up p {
+    font-size:18px;
+}
+.up p a{
+    text-decoration: none;
+}
