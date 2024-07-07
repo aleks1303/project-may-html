@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework9</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(14,122,120);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        div{
+            width: 40vw;
+            height: 50vh;
+            background-color: #ffffff;
+            border-radius: 10px 10px 0 0;
+        }
+        div p{
+            background-color: rgb(228,241,241);
+            padding: 20px 0;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        form{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .input{
+            width: 70%;
+            height: 40px;
+            margin-bottom: 30px;
+            text-align: start;
+        }
+        button{
+            background-color: rgb(228,241,241);
+            padding: 5px 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-left: 160px;
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="form">
+        <p>Вхід в особистий кабінет</p>
+        <form>
+            <label for="text"></label>
+            <input id="text" type="text" name="login" placeholder="Логін або email" class="input">
+
+            <label for="password"></label>
+            <input id="password" type="password" placeholder="Пароль" class="input">
+
+            <label for="checkbox">Запам'ятати мене
+                <input id="checkbox" type="checkbox" name="checkbox">
+                <button>Вхід</button>
+            </label>
+
+
+        </form>
+    </div>
+</section>
+</body>
+</html>
