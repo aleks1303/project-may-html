@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="'en'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: rgb(120,190,245);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+        }
+        .twitter{
+            width: 40vw;
+            height: 45vh;
+            background-color: #ffffff;
+        }
+        .header{
+            display: flex;
+            margin: 20px;
+            font-size: 25px;
+        }
+        .header h3{
+            margin-right: 10px;
+        }
+        .header a{
+            text-decoration: none;
+            color: gray;
+        }
+        .header a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        .size{
+            padding: 0 0 0 10px;
+            width: 80%;
+            height: 5vh;
+            font-size: 18px;
+        }
+        button{
+            margin-top:10px ;
+            width: 40%;
+            height: 5vh;
+            font-size: 18px;
+            align-self: flex-end;
+            margin-right: 10%;
+            border: 2px solid orange;
+            border-radius: 5px;
+
+        }
+        button:hover{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="twitter">
+        <div class="header">
+            <h3>New to Twitter?</h3>
+            <a href="#">Sing up</a>
+        </div>
+        <hr>
+        <form>
+            <label for="text"></label>
+            <input class="size" id="text" type="text" name="text" placeholder="Full name">
+
+            <label for="email"></label>
+            <input class="size" id="email" type="email" name="email" placeholder="Email">
+
+            <label for="password"></label>
+            <input class="size" id="password" type="password" name="password" placeholder="Password">
+
+            <button>S<b>ign up for Twitter</b></button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
