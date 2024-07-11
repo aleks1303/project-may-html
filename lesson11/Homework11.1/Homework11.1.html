@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework11/1</title>
+    <style>
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 3px solid purple;
+            animation: up 10s ease infinite alternate;
+        }
+        @keyframes up {
+            to{
+                border: 1px solid yellow;
+                transform: scaleX(1) translate(300px);
+
+            }
+            10%{
+                border: 1px solid red;
+                transform: scaleX(1.4) translateY(-300px) translateX(-300px);
+            }
+
+            20%{
+                border: 2px solid orange;
+                transform: scaleX(1.6) translateX(-300px) translateY(300px) ;
+            }
+            30%{
+                border: 3px solid yellow;
+                transform: scaleY(1.3) translateY(300px) translateY(-100px);
+            }
+            40%{
+                border: 4px solid green;
+                transform: scaleX(1.4) translateY(300px) translateY(-100px);
+            }
+            50%{
+                border: 5px solid deepskyblue;
+                transform: scaleY(1.5 )translateY(-200px) translateX(-300px);
+            }
+            60%{
+                border: 4px solid blue;
+                transform: scaleY(1.4)translateX(300px) translateY(-200px);
+            }
+            70%{
+                border: 3px solid purple;
+                transform: scaleX(1.6) translateY(200px) translateX(-200px);
+            }
+            80%{
+                border: 3px solid orange;
+                transform: scale(1.2) translateY(200px) translateX(-200px);
+            }
+            90%{
+                border: 4px solid yellow;
+                transform: scale(1.1);
+            }
+            from{
+                border: 5px solid greenyellow;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span class="center"></span>
+</div>
+</body>
+</html>
