@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixels</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .up{
+        height: 75vh;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        header {
+            width: 80%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header>div>img{
+            width: 50px;
+            height: 50px;
+
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    h5{
+        margin-left: 10px;
+        color: #ffffff;
+        font-size: 25px;
+    }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        ul li{
+            list-style: none;
+            color: #ffffff;
+        }
+        ul li button{
+            width: 100px;
+            height: 50px;
+            border-style: none;
+            border-radius: 10px;
+        }
+        ul li button{
+            background-color: #fff;
+        }
+
+        .intro{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .intro p{
+            margin-left: 5px;
+        }
+        .info{
+            width: 35% ;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .info h2{
+            color: #ffffff;
+            font-size: 30px;
+        }
+        .input{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #fff;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .img{
+            margin: 5px;
+            background-color: #dadada;
+            width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        input[type="search"]{
+           border-style: none;
+            width: 300px;
+            font-size: 15px;
+        }
+        .button-up  {
+            margin-right: 10px;
+            border-style: none;
+            background-color: #fff;
+        }
+        video{
+            object-fit: cover;
+            height: 75vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <section class="up">
+        <div class="header">
+            <header>
+                <div class="logo">
+                    <img src="image/pexels-seeklogo.svg" alt="logo">
+                    <h5>Pexels</h5>
+                </div>
+                <div>
+                    <ul class="list">
+                        <li>Пошук</li>
+                        <li>Ліцензія</li>
+                        <li>Завантаження</li>
+                        <li>...</li>
+                        <li>
+                            <button>
+                                Реєстрація
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div class="intro">
+            <div class="info">
+                <h2>Найкращі безкоштовні стокові відео від спільноти pexels</h2>
+                <div class="input">
+                    <div class="img">
+                        <img src="image/photo_camera.svg" alt="search">
+                        <p>Фото</p>
+                    </div>
+                    <input type="search" name="search" placeholder="Пошук безкоштовних відео">
+                    <button class="button-up">
+                        <img src="image/search.svg" alt="image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video">
+        <video loop autoplay muted src="media/rainy.mp4"></video>
+    </section>
+</body>
+</html>
