@@ -1,0 +1,16 @@
+@media screen and (max-width: 780px) {
+    section{
+        flex-direction: column;
+    }
+    section>div{
+        width: 100%;
+    }
+    .block>div{
+        border-radius: 10px;
+    }
+    aside{
+        width: 100%;
+        height: 30%;
+        margin-top: 5px;
+    }
+}
