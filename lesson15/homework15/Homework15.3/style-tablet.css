@@ -1,0 +1,21 @@
+@media  screen and (min-width: 768px) and (max-width: 1280px) {
+    .article{
+        width: 99vw;
+        margin: 0 5px 0 5px;
+    }
+    .article div {
+        width: 24%;
+        height: 100%;
+        flex-wrap: nowrap;
+        flex: 1 0 0;
+    }
+    .article div p {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        /*transform: rotate(-90deg);*/
+}
+    footer{
+        margin: 10px auto 0 auto;
+    }
+}
