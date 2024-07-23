@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maket_2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section:nth-child(n){
+            gap: 15px;
+        }
+        section p:nth-of-type(n){
+            font-size: 40px;
+            color: #FFFFFF;
+        }
+        section{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-areas:
+            'header header header header'
+            'main main main aside'
+            'block_c block_d block_e aside'
+        ;
+            header{
+                grid-area: header;
+                background-color: #ef6f6f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            main{
+                grid-area: main;
+                background-color: #efc26f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block_c{
+                grid-area:block_c;
+                background-color: #d8ef6f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block_d{
+                grid-area:block_d;
+                background-color: #63c654;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .block_e{
+                grid-area:block_e;
+                background-color: #1e773d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            aside{
+                grid-area: aside;
+                background-color: #1ec8df;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media screen and (min-width: 360px) and (max-width: 767px) {
+            section{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 2fr 4fr 2fr 2fr;
+                grid-template-areas:
+                'header header header'
+                'main main main'
+                'block_c block_d block_e'
+                'aside aside aside'
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <header><p>A</p></header>
+    <main><p>B</p></main>
+    <div class="block_c"><p>C</p></div>
+    <div class="block_d"><p>D</p></div>
+    <div class="block_e"><p>Е</p></div>
+    <aside><p>F</p></aside>
+</section>
+</body>
+</html>
