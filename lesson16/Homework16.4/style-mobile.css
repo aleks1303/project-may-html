@@ -1,0 +1,19 @@
+@media screen  and (min-width: 350px) and (max-width:767px){
+
+    section{
+        display: grid;
+        gap: 1px;
+        height: 100vh;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'header header'
+        'article2 artilce1'
+        'article3 artilce4'
+        'article5 article5'
+        'footer footer'
+    ;
+    }
+
+}
+
