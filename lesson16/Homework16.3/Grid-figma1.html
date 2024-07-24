@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maket-figma | grid</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      section{
+          display: grid;
+          height: 100vh;
+          grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+          grid-template-columns:3fr 1fr ;
+          grid-template-areas:
+          'header header '
+          'content1 spam1'
+          'content1 spam1'
+          'content2 spam1'
+          'content2 spam2'
+          'content3 spam2'
+          'content3 spam2'
+          'footer footer'
+      ;
+      }
+      header{
+          grid-area: header;
+          background-color: #8D8484;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .content1{
+          grid-area: content1;
+          background-color: #776969;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .content2{
+          grid-area: content2;
+          background-color:#643030 ;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .content3{
+          grid-area: content3;
+          background-color: #441818;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .spam1{
+          grid-area: spam1;
+          background-color: #937575;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .spam2{
+          grid-area: spam2;
+          background-color:#644C4C ;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      footer{
+          grid-area: footer;
+          background-color: #BDBDBD ;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      #black, #black1{
+          color: black;
+      }
+      section:nth-child(n) p{
+          font-size: 40px;
+          color: #FFFFFF;
+      }
+    </style>
+</head>
+<body>
+    <section>
+        <header><p id="black1">Header</p></header>
+        <div class="content1"><p>Content - 1</p></div>
+        <div class="content2"><p>Content - 2</p></div>
+        <div class="content3"><p>Content - 3</p></div>
+        <div class="spam1"><p>Spam - 1</p></div>
+        <div class="spam2"><p>Spam - 2</p></div>
+        <footer><p id="black">Footer</p></footer>
+    </section>
+</body>
+</html>
