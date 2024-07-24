@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+            'header header'
+            'main main'
+            'aside article'
+            'footer footer'
+;
+
+}
+header{
+    grid-area: header;
+    background-color: #D9D9D9;
+}
+main{
+    grid-area: main;
+    background-color: #A4A4A4;
+}
+aside{
+    grid-area: aside;
+    background-color: #C8C5C5;;
+}
+article{
+    grid-area: article;
+    background-color: #9F9B9B;
+}
+footer{
+    grid-area: footer;
+    background-color: #D9D9D9;
+}

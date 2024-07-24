@@ -8,9 +8,9 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
         'header header'
-        'article2 artilce1'
-        'article3 artilce4'
-        'article5 article5'
+        'two one'
+        'three four'
+        'five five'
         'footer footer'
     ;
     }
