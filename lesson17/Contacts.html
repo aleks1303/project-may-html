@@ -16,22 +16,70 @@
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
         <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <img src="image-home/florist.png" alt="logo" class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use>
-            <span class="fs-4">Florist shop</span>
+            <span class="fs-4">Квітковий сад</span>
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="Home.html" class="nav-link" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="Catalog.html" class="nav-link">Catalog</a></li>
-            <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="Contacts.html" class="nav-link active">Contacts</a></li>
-            <li class="nav-item"><a href="Blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="Home.html" class="nav-link" aria-current="page">Головна</a></li>
+            <li class="nav-item"><a href="Catalog.html" class="nav-link">Каталог</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">Про нас</a></li>
+            <li class="nav-item"><a href="Contacts.html" class="nav-link active">Контакти</a></li>
+            <li class="nav-item"><a href="Blog.html" class="nav-link">Блог</a></li>
         </ul>
     </header>
 </div>
+<main>
+    <section>
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами для замовлення квітів або консультацій.</p>
 
+        <h3>Наші контактні дані</h3>
+        <ul>
+            <li>Телефон: +380 123 456 789</li>
+            <li>Email: info@flowershop.ua</li>
+            <li>Адреса: вул. Квіткова, 10, Київ, Україна</li>
+        </ul>
 
+        <h3>Години роботи</h3>
+        <ul>
+            <li>Понеділок - П'ятниця: 9:00 - 18:00</li>
+            <li>Субота: 10:00 - 16:00</li>
+            <li>Неділя: вихідний</li>
+        </ul>
 
+        <h3>Форма зворотного зв'язку</h3>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.3312746876486!2d30.617972976406687!3d50.34172629518648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c6c64573079d%3A0xce7150a5bbdf92c!2z0LLRg9C7LiDQmtCy0ZbRgtC60L7QstCwLCAxMCwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1722083358866!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <section>
+        <h3>Знайдіть нас на карті</h3>
+        <div id="map" style="width: 100%;"></div>
+    </section>
+</main>
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Головна</a></li>
+            <li class="nav-item"><a href="Catalog.html" class="nav-link px-2 text-body-secondary">Каталог</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link px-2 text-body-secondary">Про нас</a></li>
+            <li class="nav-item"><a href="Contacts.html" class="nav-link px-2 text-body-secondary">Контакти</a></li>
+            <li class="nav-item"><a href="Blog.html" class="nav-link px-2 text-body-secondary">Блог</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2024 Florist shop, Inc</p>
+    </footer>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
